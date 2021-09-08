@@ -1,7 +1,7 @@
 import React from "react";
 import "./ExpenseFilter.css";
 
-const ExpenseFilter = ({ onChangeYear, selectedYear }) => {
+const ExpenseFilter = ({ selectedYear, onChangeYear }) => {
   const yearFilterHandler = (event) => {
     onChangeYear(event.target.value);
   };

@@ -9,14 +9,13 @@ function Expenses({ items }) {
 
   const storeYearHandler = (selectedYear) => {
     setYear(selectedYear);
-    console.log('year', selectedYear);
   };
 
   return (
     <Card className="expenses">
       <ExpenseFilter selectedYear={year} onChangeYear={storeYearHandler} />
-      {items.map((item, index) => {
-        return (<ExpenseItem key={index} item={item} />)
+      {items.map((item) => {
+        return (<ExpenseItem key={item.id} item={item} />)
       })}
     </Card>
   );

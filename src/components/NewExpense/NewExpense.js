@@ -5,11 +5,10 @@ import './NewExpense.css';
 const NewExpense = ({onAddExpenseData}) => {
     const saveExpenseDataHandler = (enteredExpenseData) => {
         const expenseItem = {
+            id: Math.random().toString(),
             ...enteredExpenseData,
-            id: Math.random().toString()
         };
-        onAddExpenseData(expenseItem)
-        console.log(expenseItem);
+        onAddExpenseData(expenseItem);
     };
 
     return (
