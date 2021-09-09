@@ -30,6 +30,7 @@ function ExpenseForm({ onSaveExpenseData, onEditHandler }) {
     event.preventDefault();
     const expenseData = {
         ...userInput,
+        amount: +userInput.amount,
         date: new Date(userInput.date)
     }
     onSaveExpenseData(expenseData);

@@ -28,7 +28,7 @@ const NewExpense = ({onAddExpenseData}) => {
         <div className="new-expense">
             { newExpenseContent }
         </div>
-    )
+    );
 }
 
 export default NewExpense;
